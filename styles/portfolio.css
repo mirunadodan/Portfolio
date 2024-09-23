@@ -1,0 +1,223 @@
+.portfolio {
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap:2rem;
+    background-color: var(--clr-light);
+}
+/* Carousel */
+.flickity-viewport {
+    /* height: 250px!important; */
+}
+.flickity-button {
+    color:var(--clr-dark)
+}
+.flickity-button:hover {
+    background:var(--clr-light)
+  }
+.portfolio_carousel {
+    display: none;
+}
+.carousel-cell {
+    width: 66%;
+    height: 200px;
+    margin-right: 20px;
+    counter-increment: carousel-cell;
+  }
+/* Grid */
+.portfolio_project {
+    height: 250px;
+    border: 5px solid var(--clr-slate700);
+}
+.pj1{
+    display: block;
+    background-image: url("/assets/camp.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj2{
+    display: block;
+    background-image: url("/assets/digital.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj3{
+    display: block;
+    background-image: url("/assets/digital1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj4{
+    display: block;
+    background-image: url("/assets/digital2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj5{
+    display: block;
+    background-image: url("/assets/digital3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj6{
+    display: block;
+    background-image: url("/assets/clothes.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pj1_overlay {
+    position: relative;
+    padding:1.5rem;
+    bottom: 10px;
+    right:0;
+    height: 100%;
+    background-color: #e11d47c7;
+    color:white;
+    transition: all 0.5s ease
+}
+.pj2_overlay {
+    position: relative;
+    padding:1.5rem;
+    bottom: 10px;
+    right:10px;
+    height: 100%;
+    background-color:#64748bb5;
+    color:white;
+    transition: all 0.5s ease
+}
+.pj3_overlay {
+    position: relative;
+    padding:1.5rem;
+    top: 10px;
+    right:0;
+    height: 100%;
+    background-color:#4e46e57b;
+    color:white;
+    transition: all 0.5s ease
+}
+.pj4_overlay {
+    position: relative;
+    padding:1.5rem;
+    bottom: 10px;
+    left: 10px;
+    height: 100%;
+    background-color:#4e46e5d6;
+}
+.pj5_overlay {
+    position: relative;
+    padding:1.5rem;
+    bottom: 10px;
+    right:0;
+    height: 100%;
+    background-color: #e11d4777;
+    color:white;
+    transition: all 0.5s ease
+}
+.pj6_overlay {
+    position: relative;
+    padding:1.5rem;
+    top: 10px;
+    left:10px;
+    height: 100%;
+    background-color:#312e81ae;
+    color:white;
+    transition: all 0.5s ease
+}
+
+.pj1_overlay:hover, .pj2_overlay:hover, .pj3_overlay:hover, .pj4_overlay:hover, .pj5_overlay:hover, .pj6_overlay:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: transparent
+}
+
+.overlay_title {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.overlay_text {
+    padding-top: 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* xs */
+
+@media (max-width: 475px) {
+    .portfolio {
+        margin-top: 0;
+        display: block;
+        padding-inline: 1.5rem;
+    }
+    .portfolio_project {
+        display: none;
+    }
+    .portfolio_carousel {
+        display: block;
+    }
+}
+
+/* s */
+
+@media (min-width:475px) and (max-width: 640px) {
+    .portfolio {
+        margin-top: 0;
+        display: block;
+        padding-inline: 1.5rem;
+    }
+    .portfolio_project {
+        display: none;
+    }
+    .portfolio_carousel {
+        display: block;
+    }
+    .carousel-cell {
+        width: 55%;
+    }
+}
+
+/* m */
+
+@media (min-width:640px) and (max-width: 768px) {
+    .portfolio {
+        margin-top: 0;
+        display: block;
+        padding-inline: 1.5rem;
+    }
+    .portfolio_project {
+        display: none;
+    }
+    .portfolio_carousel {
+        display: block;
+    }
+    .carousel-cell {
+        width: 45%;
+        margin-right: 20px;
+    }
+    
+}
+
+/* l */
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .portfolio_carousel {
+        display: none;
+    }
+}
+
+/* xl */
+
+@media (min-width:1024px) and (max-width: 1280px) {
+    .portfolio_carousel {
+        display: none;
+    }
+}
+
+/* 2xl */
+
+@media (min-width:1280px) and (max-width: 1536px) {
+    .portfolio_carousel {
+        display: none;
+    }
+}

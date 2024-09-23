@@ -1,0 +1,343 @@
+.hero {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding-left: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.hero_left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.hero_intro {
+    display: flex;
+    height: 150px;
+    align-items: center;
+}
+.hero_icons{
+    display: flex;
+    gap:1rem;
+    align-items: center;
+    justify-content: center;
+    filter: invert(1);
+}
+.hero_link > img {
+    width: 40px;
+}
+.hero_contact {
+    display: flex;
+    align-items:center ;
+    justify-content: flex-start;
+    gap:1rem
+}
+
+.hero_curly {
+    background-image: url("/assets/curly.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 500px;
+}
+.hero_img {
+    width: 80px;
+    border-radius: 50%;
+}
+.hero_bubble {
+    opacity: 0;
+    z-index: -1;
+    animation: 3s fadeIn;
+    animation-fill-mode: forwards;
+    transition: opacity 2s;
+    margin-bottom: 4rem;
+    width: 75%;
+    transition-delay: 1s;
+}
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+  }
+
+
+.hero_gif {
+    width: 30%;
+    box-shadow: inset;
+}
+.hero_animation {
+    position: absolute;
+    /* border: 1px solid red; */
+    top:-10px;
+    right: 350px;
+    z-index: -1;
+    background-image: url("/assets/cuburi6.gif");
+    background-size:contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    height:600px;
+    width: 200px;
+    transition: .6s ease-in-out
+}
+
+.hero_curly_left {
+    background-image: url("/assets/curlyleft.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 200px;
+}
+.hero_curly_right {
+    background-image: url("/assets/curlyright.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 200px;
+}
+
+
+ /* xs */
+
+@media (max-width: 475px) {
+    .hero_animation {
+        left: 300px;
+        height: 230px;
+        overflow: hidden;
+        width: 100px;
+    }
+    .hero {
+        /* margin-top: 3rem; */
+        padding-inline:1rem;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+    .hero_left {
+        align-items: center;
+    }
+    .hero_intro {
+        margin-top: 1rem;;
+    }
+    .hero_contact {
+        align-items: flex-end;
+    }
+    .hero_img{
+        width: 60px;
+    }
+    .hero_bubble {
+        width: 85%;
+        margin-bottom:2.5rem;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        padding: 0.25rem;
+        font-size: 1rem;
+    }
+    .hero_link > img {
+        width: 30px;
+    }
+    .svg_rect {
+        height: 40px;
+        width: 100px;
+    }
+}
+
+/* s */
+
+@media (min-width:475px) and (max-width: 640px) {
+    .hero_animation {
+        right: 60px;
+        height: 230px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .hero {
+        padding-inline:1rem;
+        align-items: flex-start;
+    }
+    .hero_left {
+        align-items: center;
+    }
+    .hero_intro {
+        margin-top: 1rem;;
+    }
+    .hero_img{
+        width: 60px;
+    }
+    .hero_bubble {
+        width: 85%;
+        margin-bottom:2.5rem;
+    }
+    .btn {
+        width: 100px;
+        height: 40px;
+        padding: 0.25rem;
+        font-size: var(--fs-s)
+    }
+    .hero_link > img {
+        width: 30px;
+    }
+    .svg_rect {
+        height: 40px;
+        width: 100px;
+    }
+}
+
+/* m */
+
+@media (min-width:640px) and (max-width: 768px) {
+    .hero_animation {
+        right: 100px;
+        height: 250px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .hero {
+        padding-inline:1rem;
+        align-items: flex-start;
+    }
+    .hero_left {
+        align-items: center;
+    }
+    .hero_intro {
+        margin-top: 1rem;;
+    }
+    .hero_img{
+        width: 80px;
+    }
+    .hero_bubble {
+        width: 85%;
+        margin-bottom:2rem;
+    }
+    .btn {
+        width: 120px;
+        height: 40px;
+        padding: 0.25rem;
+        font-size: var(--fs-m)
+    }
+    .svg_rect {
+        height: 40px;
+        width: 120px;
+    }
+}
+
+/* l */
+
+@media (min-width:768px) and (max-width: 1024px) {
+    .hero_animation {
+        right: 250px;
+        height: 350px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .hero {
+        margin-top: 8rem;
+        padding-inline:1rem;
+        align-items: flex-start;
+    }
+    .hero_left {
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero_intro {
+        margin-top: 5rem;
+    }
+    .hero_img{
+        width: 80px;
+    }
+    .hero_bubble {
+        width: 85%;
+    }
+    .btn {
+        width: 150px;
+        height: 50px;
+        padding: 0.5rem;
+        font-size: var(--fs-l)
+    }
+    .svg_rect {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+/* xl */
+
+@media (min-width:1024px) and (max-width: 1280px) {
+    .hero_animation {
+        right: 350px;
+        height: 350px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .hero {
+        margin-top: 10rem;
+        padding-inline:1rem;
+        align-items: flex-start;
+    }
+    .hero_left {
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero_intro {
+        margin-top: 5rem;
+    }
+    .hero_img{
+        width: 80px;
+    }
+    .hero_bubble {
+        width: 85%;
+    }
+    .btn {
+        width: 150px;
+        height: 50px;
+        padding: 0.5rem;
+        font-size: var(--fs-l)
+    }
+    .svg_rect {
+        height: 50px;
+        width: 150px;
+    }
+}
+
+/* 2xl */
+
+@media (min-width:1280px) and (max-width: 1536px) {
+    .hero_animation {
+        right: 500px;
+        height: 400px;
+        overflow: hidden;
+        width: 150px;
+    }
+    .hero {
+        margin-top: 10rem;
+        padding-inline:1rem;
+        align-items: flex-start;
+    }
+    .hero_left {
+        align-items: center;
+        gap: 1rem;
+    }
+    .hero_intro {
+        margin-top: 5rem;
+    }
+    .hero_img{
+        width: 100px;
+    }
+    .hero_bubble {
+        width: 100%;
+    }
+    .btn {
+        width: 150px;
+        height: 50px;
+        padding: 0.5rem;
+        font-size: var(--fs-l)
+    }
+    .svg_rect {
+        height: 50px;
+        width: 150px;
+    }
+}

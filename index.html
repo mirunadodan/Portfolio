@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <link rel="icon" type="image/png" href="/assets/MD.png">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="/styles/utils.css" />
+    <link rel="stylesheet" href="/styles/hero.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/portfolio.css" />
+    <link rel="stylesheet" href="/styles/projects.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <title>Miruna Dodan - Portfolio</title>
+  </head>
+  <body>
+    
+    <section class="animation">
+      <div class="hero_animation">
+      </div>
+      <section class="header container">
+        <button class="header_nav" id="about">// about</button>
+        <button class="header_nav"><a class="header_nav" href="#portfolio">// portfolio</a></button>
+        <button class="header_nav"><a class="header_nav" href="#projects">// projects</a></button>
+        <button class="header_nav" class="contact"><a class="header_nav" href="#footer">// contact</a></button>
+      </section>
+
+      <section class="hero container">
+        <div class="hero_curly_left">
+        </div>
+        <div class="hero_left">
+          <div class="hero_intro">
+            <img class="hero_img" src="https://cdni.iconscout.com/illustration/premium/thumb/woman-profile-illustration-download-in-svg-png-gif-file-formats--young-female-girl-avatar-portraits-pack-people-illustrations-6590622.png?f=webp"/>
+            <img class="hero_bubble" src="/assets/bubble2.png"/>
+          </div>
+          <div class="hero_contact">
+            <button class="btn contact_me"> 
+              <svg xmlns="http://www.w3.org/2000/svg">
+                <rect class="svg_rect" rx="0" ry="0" class="line" height="40px" width="100px"/>
+              </svg>
+              <span>Contact me</span>
+            </button>
+            <div class="hero_icons">
+              <a class="hero_link" href="https://github.com/mirunadodan"><img src="/assets/icons/facebook.png" /> </a>
+              <a class="hero_link" href="https://github.com/mirunadodan"><img src="/assets/icons/linkedin.png" /> </a>
+              <a class="hero_link" href="https://github.com/mirunadodan"><img src="/assets/icons/github.png" /> </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero_curly_right">
+        </div>
+      </section>    
+    </section>
+
+    <section class="portfolio container" id="portfolio">
+      <!-- CAROUSEL -->
+      <div class="portfolio_carousel" data-flickity='{ "freeScroll": true, "wrapAround": true }'>
+        <div class="carousel-cell pj1">
+          <div class="pj1_overlay">
+            <h1 class="overlay_title">Camp'n'Chill - Camping accomodations in Romania</h1>
+            <ul class="overlay_text">
+              <li>MongoDB databases.</li>
+              <li>User authentication.</li>
+              <li>Filter, sorting and favorites.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="carousel-cell pj2">
+          <div class="pj2_overlay">
+            <p>Digital agency presentation website</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.
+                </li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+              </ul>
+          </div>
+        </div>
+        <div class="carousel-cell pj3">
+          <div class="pj3_overlay">
+            <p>Digital agency presentation website</p>
+              <ul>
+                <li>Lorem ipsum dolor sit amet.
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="carousel-cell pj4">
+          <div class="pj4_overlay"><p>Web dev presentation website</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="carousel-cell pj5">
+          <div class="pj5_overlay"><p>Personal portfolio website</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.
+              </li>
+              </ul>
+          </div>
+        </div>
+        <div class="carousel-cell pj6">
+          <div class="pj6_overlay"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi!</p>
+            <ul>
+              <li>Lorem ipsum dolor sit amet.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- GRID -->
+      <div class="portfolio_project pj1 ">
+        <div class="pj1_overlay">
+          <h1 class="overlay_title">Camp'n'Chill - Camping accomodations in Romania</h1>
+          <ul class="overlay_text">
+            <li>MongoDB databases.</li>
+            <li>User authentication.</li>
+            <li>Filter, sorting and favorites.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="portfolio_project pj2">
+        <div class="pj2_overlay">
+        <p class="overlay_title">Digital agency presentation website</p>
+          <ul class="overlay_text">
+            <li>HTML, CSS & JS.</li>
+            <li>No other libraries used.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="portfolio_project pj3">
+        <div class="pj3_overlay">
+        <p class="overlay_title">Web dev presentation website</p>
+          <ul class="overlay_text">
+            <li>HTML, CSS & JS.</li>
+            <li>No other libraries used.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="portfolio_project pj4">
+        <div class="pj4_overlay">
+          <p class="overlay_title">Personal presentation website</p>
+          <ul class="overlay_text">
+            <li>HTML, CSS & JS.</li>
+            <li>No other libraries used.</li>
+            </ul>
+        </div>
+      </div>
+      <div class="portfolio_project pj5">
+        <div class="pj5_overlay">
+          <p class="overlay_title">Book launch website</p>
+          <ul class="overlay_text">
+            <li>HTML, CSS & JS.</li>
+            <li>Bootstrap</li>
+            </ul>
+        </div>
+      </div>
+      <div class="portfolio_project pj6">
+        <div class="pj6_overlay">
+          <p class="overlay_title">Ecommerce store</p>
+          <ul class="overlay_text">
+            <li>React</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+      </div>
+      <!-- END GRID -->
+    </section>
+
+    <section class="projects container" id="projects">
+    <h1 class="projects_title">Projects & Experiments</h1>
+    <div class="projects_cards">
+      <a class="project_card" href="https://tictac-4lcz.onrender.com" target="_blank">
+        <img class="card_img" src="/assets/tictac.gif"/>
+        <div class="card_text">
+          <p class="card_title">Tic Tac Toe Game</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+      </a>
+    <a class="project_card" href="https://quotegenerator-iag3.onrender.com" target="_blank">
+      <img class="card_img" src="/assets/quotes.gif"/>
+      <div class="card_text">
+          <p class="card_title">Quote Generator</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+    </a>
+    <a class="project_card" href="https://luckydice-2bje.onrender.com" target="_blank">
+      <img class="card_img" src="/assets/gambling1.gif"/>
+      <div class="card_text">
+          <p class="card_title">Dice Game</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+    </a>
+    <a class="project_card" href="https://colorbox-4etu.onrender.com/">
+      <img class="card_img" src="/assets/colors1.gif"/>
+      <div class="card_text">
+          <p class="card_title">Colored Boxes</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+    </a>
+    <a class="project_card" href="https://todolist-uhri.onrender.com" target="_blank">
+      <img class="card_img" src="/assets/todo.gif"/>
+      <div class="card_text">
+          <p class="card_title">To Do List</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+    </a>
+    <a class="project_card" href="https://pingpongscore.onrender.com" target="_blank">
+      <img class="card_img" src="/assets/pingpong.gif"/>
+      <div class="card_text">
+          <p class="card_title">Ping Pong Score</p>
+          <p class="card_subtitle">2 player game, turn-based. Counting wins for each player.</p>
+        </div>
+    </a>
+    </div>
+    </section>
+
+    <section class="footer container" id="footer">
+        <div class="contact_form">
+          <h1 class="contact_heading">Let's talk</h1>
+  
+            <form class="contact_form" id="contact_form">
+              <input type="text" class="contact_input" name="name" placeholder="Your name" id="contact_name" required/>
+              <input type="email" class="contact_input" name="email" placeholder="Your email" id="contact_email" oninput="validateEmailInput()" required/>
+              <input type="text" class="contact_input" name="message" placeholder="Message" id="contact_message" required/>
+              <p id="contactEmailFeedback" style="color:var(--clr-rose); margin-top: 0.5rem;"></p>
+              <button class="contact_submit" id="contact_submit">Submit</button>
+            </form>
+            <div class="footer_icons">
+             <a class="footer_link" href="https://facebook.com"><img src="/assets/icons/facebook.png" /> </a>
+             <a class="footer_link" href="https://linkedin.com"><img src="/assets/icons/linkedin.png" /> </a>
+             <a class="footer_link" href="https://github.com/mirunadodan"><img src="/assets/icons/github.png" /> </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer_copy">
+    Copyright &copy;<script>document.write(new Date().getFullYear())</script> Miruna Dodan All Rights Reserved
+    </section>
+
+
+  <!-- About Pop-up -->
+  <div class="popup-overlay about_container" id="aboutOverlay">
+    <div class="popup" id="popup">
+        <span class="close" id="closeAboutPopup"><img src="/assets/icons/close.png" style="width: 20px;"/></span>
+        <div class="about_content">
+            <div class="about_left">
+              <h1 class="about_heading">About me</h1>
+              <p class="about_text">I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies. I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.</p>
+              <p class="about_text">
+               I work with:
+                </p>
+              <div class="about_icons">
+                <img class="icon1" src="/assets/icons/react.png"/>
+                <img class="icon2" src="/assets/icons/js.png"/>
+                <img class="icon3" src="/assets/icons/bootstrap.svg"/>
+                <img class="icon4" src="/assets/icons/ejs.png" style="width: 50px;"/>
+                <img class="icon5" src="/assets/icons/mongodb.png"/>
+              </div>
+            </div>
+            <div class="about_right" id="about_right">
+              <h1 class="about_heading">Let's talk</h1>
+              <form class="about_form" id="about_form">
+                <input type="text" class="about_input" name="name" placeholder="Your name" id="form_name" required/>
+                <input type="email" class="about_input" name="email" placeholder="Your email" id="form_email" oninput="validateEmailInput()" required/>
+                <input type="text" class="about_input" name="message" placeholder="Message" id="form_message" required/>
+                <p id="emailFeedback" style="color:var(--clr-rose); margin-top: 0.5rem;"></p>
+                <button class="btn about_submit" id="submit">Submit</button>
+              </form>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <script src="/scripts/about.js"></script>
+  <script src="/scripts/email.js"></script>
+
+  <!-- ABOUT EmailJS -->
+  <script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey:"bvjhhz1Bpxx5Pocbz",
+      });
+   })();
+
+  const name = document.getElementById("form_name")
+  const email = document.getElementById("form_email")
+  const message = document.getElementById("form_message")
+  const feedbackElement = document.getElementById('emailFeedback');
+
+  document.getElementById("submit").addEventListener("click", () => {
+    event.preventDefault();
+
+    var templateParams = {
+    name:name.value,
+    email:email.value,
+    message:message.value
+  };
+
+  if (feedbackElement.innerText == "" && name.value !="" && email.value !="" && message.value !="") {
+    emailjs.send('service_v1gf5kb', 'template_h2yflux', templateParams).then(
+      (response) => {
+        insertSuccess();
+      },
+      (error) => {
+        insertError();
+      },
+    );
+  } else if (name.value =="" ) {
+      feedbackElement.textContent = "Please enter a valid name."
+        } else if (name.value =="" ) {
+          feedbackElement.textContent = "Please enter a valid email address."
+        } else if (name.message =="" ) {
+          feedbackElement.textContent = "Please enter a valid message."
+        }
+  else feedbackElement.textContent = "Please enter a valid email address.";
+})
+function insertSuccess() {
+  const p = document.createElement("p");
+  p.innerText = "Message was sent!";
+  p.setAttribute("class","form_success")
+  document.getElementById("about_right").appendChild(p);
+  name.value="";
+  email.value="";
+  message.value="";
+    setTimeout(() => {
+      p.innerText=""
+    },3000);
+
+}
+function insertError() {
+  const p = document.createElement("p");
+  p.innerText = "There was an error, please try again!";
+  p.setAttribute("class","form_error")
+  document.getElementById("about_right").appendChild(p)
+  setTimeout(() => {
+      p.innerText=""
+    },3000);
+
+}
+</script>
+
+  <!-- CONTACT EmailJS -->
+  <script type="text/javascript">
+    (function(){
+       emailjs.init({
+         publicKey:"bvjhhz1Bpxx5Pocbz",
+       });
+    })();
+ 
+   const cname = document.getElementById("contact_name")
+   const cemail = document.getElementById("contact_email")
+   const cmessage = document.getElementById("contact_message")
+   const contactFeedbackElement = document.getElementById('contactEmailFeedback');
+ 
+   document.getElementById("contact_submit").addEventListener("click", () => {
+     event.preventDefault();
+ 
+     var templateParams = {
+      contactname:cname.value,
+      contactemail:cemail.value,
+      contactmessage:cmessage.value
+   };
+ 
+   if (contactFeedbackElement.innerText == "" && cname.value !="" && cemail.value !="" && cmessage.value !="") {
+     emailjs.send('service_v1gf5kb', 'template_pj3s7ee', templateParams).then(
+       (response) => {
+         insertContactSuccess();
+       },
+       (error) => {
+         insertContactError();
+       },
+     );
+   } else if (cname.value =="" ) {
+      contactFeedbackElement.textContent = "Please enter a valid name."
+        } else if (cname.value =="" ) {
+        contactFeedbackElement.textContent = "Please enter a valid email address."
+        } else if (cname.message =="" ) {
+        contactFeedbackElement.textContent = "Please enter a valid message."
+        } else
+        contactFeedbackElement.textContent = "Please enter a valid email address.";
+ })
+ function insertContactSuccess() {
+   const p = document.createElement("p");
+   p.innerText = "Message was sent!";
+   p.setAttribute("class","form_success")
+   document.getElementById("contact_form").appendChild(p);
+   name.value="";
+   email.value="";
+   message.value="";
+     setTimeout(() => {
+       p.innerText=""
+     },3000);
+ 
+ }
+ function insertContactError() {
+   const p = document.createElement("p");
+   p.innerText = "There was an error, please try again!";
+   p.setAttribute("class","form_error")
+   document.getElementById("contact_form").appendChild(p)
+   setTimeout(() => {
+       p.innerText=""
+     },3000);
+ 
+ }
+ </script>
+
+  </body>
+</html>

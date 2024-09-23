@@ -1,0 +1,163 @@
+:root {
+    --clr-dark: #020617 ;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate500:#64748b;
+    --clr-slate700: #334155;
+    --clr-indigo: #4f46e5;
+    --clr-rose: #e11d48;
+}
+:root {
+    --fs-xxs:0.5rem;
+    --fs-xs:0.8rem;
+    --fs-s:1rem;
+    --fs-m:1.2rem;
+    --fs-l:1.5rem;
+    --fs-xl:1.8rem;
+    --fs-xxl:2rem;
+}
+
+* {
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+html {
+    scroll-behavior: smooth;
+    background-color: var(--clr-dark);
+    /* overflow-x: hidden; */
+}
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing: -0.05em;
+    color: var(--clr-light);
+    background: transparent;
+    border: 1px solid #4f46e5;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+.btn:hover {
+    transform: translateY(0px);
+    cursor: pointer;
+    background: #4f46e5;
+}
+a:hover {
+    cursor: pointer;
+}
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+  }
+.btn:hover svg {
+    stroke-dashoffset: -480;
+    transition: all 1.5s ease-in-out;
+  }
+  
+/* Media Queries */
+.container {
+    width: 100%;
+}
+section {
+    margin-top: 3rem;
+}
+
+/* xs */
+
+@media (max-width: 475px) {
+    .container {
+    min-width: 475px;
+}
+}
+
+/* s */
+
+@media (min-width:475px) and (max-width: 640px) {
+.container {
+    min-width: 640px;
+}
+}
+
+/* m */
+
+@media (min-width:640px) and (max-width: 768px) {
+.container {
+    min-width: 768px;
+}
+}
+
+/* l */
+
+@media (min-width:768px) and (max-width: 1024px) {
+.container {
+    min-width: 1024px;
+}
+}
+
+/* xl */
+
+@media (min-width:1024px) and (max-width: 1280px) {
+.container {
+    min-width: 1280px;
+}
+}
+
+/* 2xl */
+
+@media (min-width:1280px) and (max-width: 1536px) {
+.container {
+    min-width: 1536px;
+}
+}
+
+
+
+/* xs */
+
+/* @media (max-width: 475px) {
+
+} */
+
+/* s */
+
+/* @media (min-width:475px) and (max-width: 640px) {
+
+} */
+
+/* m */
+
+/* @media (min-width:640px) and (max-width: 768px) {
+
+} */
+
+/* l */
+
+/* @media (min-width:768px) and (max-width: 1024px) {
+
+} */
+
+/* xl */
+
+/* @media (min-width:1024px) and (max-width: 1280px) {
+
+} */
+
+/* 2xl */
+
+/* @media (min-width:1280px) and (max-width: 1536px) {
+
+} */
