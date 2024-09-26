@@ -41,6 +41,10 @@
     height: 40px;
     width: 120px;
 }
+.svg_rect_submit {
+    height: 40px;
+    width: 120px;
+}
 
 /* RIGHT */
 .contact_text {
@@ -71,13 +75,12 @@
 @media (max-width: 475px) {
     .contact_submit {
         font-size: var(--fs-s);
-        width: 40%;
     }
     .contact_heading {
         font-size: var(--fs-m)
     }
     .contact_input {
-        font-size: var(--fs-s);
+        font-size: var(--fs-xs);
     }  
     .footer_copy {
         font-size: var(--fs-s);
@@ -89,10 +92,9 @@
 @media (min-width:475px) and (max-width: 640px) {
     .contact_submit {
         font-size: var(--fs-m);
-        width: 40%;
     }
     .contact_heading {
-        font-size: var(--fs-l)
+        font-size: var(--fs-m);
     }
     .contact_input {
         font-size: var(--fs-s);
@@ -124,6 +126,8 @@
 @media (min-width:768px) and (max-width: 1024px) {
     .contact_submit {
         font-size: var(--fs-m);
+        height: 50px;
+        width: 150px;
     }
     .contact_heading {
         font-size: var(--fs-l)
@@ -134,22 +138,32 @@
     .footer_copy {
         font-size: var(--fs-m);
     }
+    .svg_rect_submit {
+        height: 50px;
+        width: 150px;
+    }
 }
 
 /* xl */
 
 @media (min-width:1024px) and (max-width: 1280px) {
     .contact_submit {
-        font-size: var(--fs-m);
+        font-size: var(--fs-l);
+        height: 50px;
+        width: 150px;
     }
     .contact_heading {
         font-size: var(--fs-xl)
     }
     .contact_input {
-        font-size: var(--fs-s);
+        font-size: var(--fs-m);
     }  
     .footer_copy {
         font-size: var(--fs-m);
+    }
+    .svg_rect_submit {
+        height: 50px;
+        width: 150px;
     }
 }
 
@@ -157,15 +171,21 @@
 
 @media (min-width:1280px) and (max-width: 1536px) {
     .contact_submit {
-        font-size: var(--fs-m);
+        font-size: var(--fs-l);
+        height: 50px;
+        width: 150px;
     }
     .contact_heading {
         font-size: var(--fs-xl)
     }
     .contact_input {
-        font-size: var(--fs-s);
+        font-size: var(--fs-m);
     }  
     .footer_copy {
         font-size: var(--fs-m);
+    }
+    .svg_rect_submit {
+        height: 50px;
+        width: 150px;
     }
 }

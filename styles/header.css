@@ -47,6 +47,9 @@
     .header {
         font-size: var(--fs-m)
     }
+    .header {
+        gap:1.5rem;
+    }
 }
 
 /* l */

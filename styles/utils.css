@@ -32,13 +32,13 @@ a {
 
 .btn {
     display: inline-block;
-    font-size: 1.2rem;
-    font-weight: 600;
+    font-size: var(--fs-m);
+    font-weight: 400;
     width: 150px;
     height: 50px;
     cursor: pointer;
     text-decoration: none;
-    letter-spacing: -0.05em;
+    letter-spacing: 0.1ch;
     color: var(--clr-light);
     background: transparent;
     border: 1px solid #4f46e5;

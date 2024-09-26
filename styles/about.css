@@ -49,8 +49,8 @@
     width: 80%;
     border: none;
     border-bottom: 3px solid #334155;
-    font-size: 0.8em;
-    letter-spacing: 2px;
+    font-size: var(--fs-xs);
+    letter-spacing: 0.1ch;
     font-weight: 500;
     height: 3rem;
     text-align: top;
@@ -62,47 +62,6 @@ input:focus {
     animation: border_anim 1s linear forwards;
 }
 
-.about_icons {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    justify-content: space-around;
-    padding:0.8rem;
-    border: 3px solid;
-    border-color: #334155;
-    /* animation: full_border 5s linear forwards; */
-    /* animation-iteration-count: infinite; */
-}
-.about_icons > img {
-    width: 30px;
-    /* transition: all 2s ease-in-out;
-    animation: icons 2s linear forwards */
-}
-
-@keyframes icons {
-    0% {
-        display: none;
-      }
-    10% {
-        .icon1 {
-            display: block;
-        }
-    }
-    50% {
-        .icon1 {
-            display: block;
-        }
-    }
-    
-    75% {
-        .icon1 {
-            display: block;
-        }
-    }
-    100% {
-      display: none;
-    }
-}
 @keyframes border_anim {
    0% {
         border-color: #334155;
@@ -117,34 +76,14 @@ input:focus {
 		border-color: var(--clr-indigo);
 	}
 }
-@keyframes full_border {
-    0% {
-        border-image: #334155;
-    }
-    25% {
-         border-image: linear-gradient(to right,#334155 0%,#334155 50%, #e11d48 100%) 1;
-    }
-     50% {
-         border-image: linear-gradient(to right,#e11d48 0%, #e11d48 75%, #4f46e5 100%) 1;
-     }
-     75% {
-        border-image: linear-gradient(to right,#4f46e5 0%, #4f46e5  75%, #334155 100%) 1;
-    }
-     100%{
-        border-image:#334155;
-     }
- }
 
  .about_submit {
     margin-top: 1rem;
     color:var(--clr-indigo);
-    font-weight: 600;
-    font-size:1.2em;
     width: 50%
  }
  .about_submit:hover {
     color:var(--clr-light);
-    font-weight: 600;
  }
 
  .form_success {
@@ -153,6 +92,97 @@ input:focus {
     font-weight: 500;
     color: rgb(0, 128, 64);
  }
+ /* ICONS CAROUSEL */
+
+.about_carousel {
+    margin: 0 auto;
+    max-width: 350px;
+    overflow: hidden;
+    display: flex;
+    &:hover .about_group {
+        animation-play-state: paused;
+      }
+  }
+.about_group {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+    will-change: transform;
+    animation: scrolling 10s linear infinite;
+}
+@keyframes scrolling {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .about_cell {
+    width: 50px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+    &:nth-child(1) {
+      /* background: #7958ff; */
+      background-image: url('/assets/icons/react.png');
+      background-size: cover;
+
+    }
+
+    &:nth-child(2) {
+      /* background: #5d34f2; */
+      background-image: url('/assets/icons/js.png');
+      background-size: cover;
+    }
+
+    &:nth-child(3) {
+      /* background: #4300da; */
+      background-image: url('/assets/icons/bootstrap.svg');
+      background-size: cover;
+    }
+    &:nth-child(4) {
+        /* background: #4300da; */
+        background-image: url('/assets/icons/material.svg');
+        background-size: cover;
+        /* background-repeat: no-repeat;
+        background-position: center; */
+      }
+    &:nth-child(5) {
+        /* background: #4300da; */
+        background-image: url('/assets/icons/mongodb.png');
+        background-size: cover;
+      }
+      &:nth-child(6) {
+        /* background: #4300da; */
+        background-image: url('/assets/icons/ejs.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+  }
+  .cell_tooltip {
+    visibility: hidden;
+  }
+  .cell1,.cell2,.cell3,.cell4,.cell5,.cell6 {
+      position: relative;
+       .cell_tooltip {
+        position:absolute;
+        background-color:var(--clr-indigo);
+        color:var(--clr-light);
+        padding: 0.25rem;
+        font-size: 0.8rem;
+        bottom: 0;
+        right: 0;
+      }
+  }
+  .cell1:hover, .cell2:hover, .cell3:hover, .cell4:hover, .cell5:hover, .cell6:hover {
+    .cell_tooltip {
+        visibility: visible;
+    }
+  }
 
  /* xs */
 
@@ -164,10 +194,10 @@ input:focus {
         display: none;
     }
     .about_heading {
-        font-size: 1.5em;
+        font-size: var(--fs-m)
     }
     .about_text {
-        font-size: 0.8em;
+        font-size: var(--fs-s)
     }
     .about_icons {
         gap:1rem
@@ -181,10 +211,10 @@ input:focus {
         min-width: 640px;
     }
     .about_heading {
-        font-size: 1.5em;
+        font-size: var(--fs-m)
     }
     .about_text {
-        font-size: 0.8em;
+        font-size: var(--fs-s)
     }
     .about_content {
         flex-direction: column;
@@ -199,14 +229,21 @@ input:focus {
         min-width: 768px;
     }
     .about_heading {
-        font-size: 1.5rem;
+        font-size: var(--fs-m)
     }
     .about_text {
-        font-size: 1rem;
+        font-size: var(--fs-s)
+    }
+    .about_input {
+        font-size: var(--fs-s);
+        height: 2.5rem;
     }
     .about_content {
         flex-direction: column;
         gap:1rem
+    }
+    .about_submit{
+        font-size: var(--fs-m)
     }
 }
 
@@ -220,12 +257,18 @@ input:focus {
         flex-direction: column;
         gap:1rem
     }
-    .about_input {
-        height: 4rem;
-        font-size:1em;
+    .about_heading {
+        font-size: var(--fs-l)
     }
-    .about_submit{
-        font-size: 1.2em;
+    .about_text {
+        font-size: var(--fs-m)
+    }
+    .about_input {
+        font-size: var(--fs-s);
+        height: 3rem;
+    }
+    .about_carousel {
+        max-width: 440px;
     }
 }
 
@@ -236,17 +279,17 @@ input:focus {
         min-width: 1280px;
     }
     .about_heading {
-        font-size: 2rem;
+        font-size: var(--fs-l);
     }
     .about_text {
-        font-size: 1.2em;
+        font-size: var(--fs-m);
     }
     .about_input {
         height: 4rem;
-        font-size: 1.2em;
+        font-size: var(--fs-s);
     }
     .about_submit{
-        font-size: 1.2em;
+        font-size: var(--fs-m);
     }
 }
 
@@ -257,16 +300,16 @@ input:focus {
         min-width: 1536px;
     }
     .about_heading {
-        font-size: 2rem;
+        font-size: var(--fs-l);
     }
     .about_text {
-        font-size: 1.2em;
+        font-size: var(--fs-m);
     }
     .about_input {
-        height: 5rem;
-        font-size: 1.2em;
+        height: 4rem;
+        font-size: var(--fs-s);
     }
     .about_submit{
-        font-size: 1.2em;
+        font-size: var(--fs-m);
     }
 }

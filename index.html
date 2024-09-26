@@ -44,7 +44,7 @@
               <svg xmlns="http://www.w3.org/2000/svg">
                 <rect class="svg_rect" rx="0" ry="0" class="line" height="40px" width="100px"/>
               </svg>
-              <span>Contact me</span>
+              <span>Contact</span>
             </button>
             <div class="hero_icons">
               <a class="hero_link" href="https://github.com/mirunadodan"><img src="/assets/icons/facebook.png" /> </a>
@@ -73,45 +73,46 @@
         </div>
         <div class="carousel-cell pj2">
           <div class="pj2_overlay">
-            <p>Digital agency presentation website</p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.
-                </li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+            <p class="overlay_title">Digital agency presentation website</p>
+              <ul class="overlay_text">
+                <li>HTML, CSS & JS.</li>
+                <li>No other libraries used.</li>
               </ul>
           </div>
         </div>
         <div class="carousel-cell pj3">
           <div class="pj3_overlay">
-            <p>Digital agency presentation website</p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.
-                </li>
+            <p class="overlay_title">Digital agency presentation website</p>
+              <ul class="overlay_text">
+                <li>HTML, CSS & JS.</li>
+                <li>No other libraries used.</li>
               </ul>
             </div>
         </div>
         <div class="carousel-cell pj4">
-          <div class="pj4_overlay"><p>Web dev presentation website</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet.
-              </li>
+          <div class="pj4_overlay">
+            <p class="overlay_title">Web dev presentation website</p>
+            <ul class="overlay_text">
+              <li>HTML, CSS & JS.</li>
+              <li>No other libraries used.</li>
             </ul>
           </div>
         </div>
         <div class="carousel-cell pj5">
-          <div class="pj5_overlay"><p>Personal portfolio website</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet.
-              </li>
+          <div class="pj5_overlay">
+            <p class="overlay_title">Book launch website</p>
+            <ul class="overlay_text">
+              <li>HTML, CSS & JS.</li>
+              <li>Bootstrap</li>
               </ul>
           </div>
         </div>
         <div class="carousel-cell pj6">
-          <div class="pj6_overlay"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, sequi!</p>
-            <ul>
-              <li>Lorem ipsum dolor sit amet.
-              </li>
+          <div class="pj6_overlay">
+            <p class="overlay_title">Ecommerce store</p>
+            <ul class="overlay_text">
+              <li>React</li>
+              <li>Bootstrap</li>
             </ul>
           </div>
         </div>
@@ -119,7 +120,7 @@
       <!-- GRID -->
       <div class="portfolio_project pj1 ">
         <div class="pj1_overlay">
-          <h1 class="overlay_title">Camp'n'Chill - Camping accomodations in Romania</h1>
+          <h1 class="overlay_title">Camp'n'Chill - Camping accomodations</h1>
           <ul class="overlay_text">
             <li>MongoDB databases.</li>
             <li>User authentication.</li>
@@ -232,7 +233,12 @@
               <input type="email" class="contact_input" name="email" placeholder="Your email" id="contact_email" oninput="validateEmailInput()" required/>
               <input type="text" class="contact_input" name="message" placeholder="Message" id="contact_message" required/>
               <p id="contactEmailFeedback" style="color:var(--clr-rose); margin-top: 0.5rem;"></p>
-              <button class="contact_submit" id="contact_submit">Submit</button>
+              <button class="btn contact_submit" id="contact_submit">
+                <svg xmlns="http://www.w3.org/2000/svg">
+                  <rect class="svg_rect_submit" rx="0" ry="0" class="line" height="40px" width="100px"/>
+                </svg>
+                Submit
+              </button>
             </form>
             <div class="footer_icons">
              <a class="footer_link" href="https://facebook.com"><img src="/assets/icons/facebook.png" /> </a>
@@ -258,13 +264,24 @@
               <p class="about_text">
                I work with:
                 </p>
-              <div class="about_icons">
-                <img class="icon1" src="/assets/icons/react.png"/>
-                <img class="icon2" src="/assets/icons/js.png"/>
-                <img class="icon3" src="/assets/icons/bootstrap.svg"/>
-                <img class="icon4" src="/assets/icons/ejs.png" style="width: 50px;"/>
-                <img class="icon5" src="/assets/icons/mongodb.png"/>
+                <div class="about_carousel">
+                  <div class="about_group">
+                    <div class="about_cell cell1"><span class="cell_tooltip">React</span></div>
+                    <div class="about_cell cell2"><span class="cell_tooltip">Javascript</span></div>
+                    <div class="about_cell cell3"><span class="cell_tooltip">Bootstrap</span></div>
+                    <div class="about_cell cell4"><span class="cell_tooltip">Material UI</span></div>
+                    <div class="about_cell cell5"><span class="cell_tooltip">MongoDB</span></div>
+                    <div class="about_cell cell6"><span class="cell_tooltip">EJS</span></div>
+                </div>
+                <div aria-hidden class="about_group">
+                  <div class="about_cell cell1"><span class="cell_tooltip">React</span></div>
+                  <div class="about_cell cell2"><span class="cell_tooltip">Javascript</span></div>
+                  <div class="about_cell cell3"><span class="cell_tooltip">Bootstrap</span></div>
+                  <div class="about_cell cell4"><span class="cell_tooltip">Material UI</span></div>
+                  <div class="about_cell cell5"><span class="cell_tooltip">MongoDB</span></div>
+                  <div class="about_cell cell6"><span class="cell_tooltip">EJS</span></div>
               </div>
+                </div>
             </div>
             <div class="about_right" id="about_right">
               <h1 class="about_heading">Let's talk</h1>

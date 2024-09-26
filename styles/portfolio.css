@@ -11,6 +11,9 @@
 .flickity-viewport {
     /* height: 250px!important; */
 }
+.flickity-page-dots {
+    display: none;
+}
 .flickity-button {
     color:var(--clr-dark)
 }
@@ -28,7 +31,7 @@
   }
 /* Grid */
 .portfolio_project {
-    height: 250px;
+    height: 350px;
     border: 5px solid var(--clr-slate700);
 }
 .pj1{
@@ -83,7 +86,8 @@
     bottom: 10px;
     right:10px;
     height: 100%;
-    background-color:#64748bb5;
+    background-color:#64748bd3;
+    background-color:#4e46e5bc;
     color:white;
     transition: all 0.5s ease
 }
@@ -93,7 +97,7 @@
     top: 10px;
     right:0;
     height: 100%;
-    background-color:#4e46e57b;
+    background-color:#64748bd3;
     color:white;
     transition: all 0.5s ease
 }
@@ -104,6 +108,8 @@
     left: 10px;
     height: 100%;
     background-color:#4e46e5d6;
+    color:white;
+    transition: all 0.5s ease
 }
 .pj5_overlay {
     position: relative;
@@ -111,7 +117,7 @@
     bottom: 10px;
     right:0;
     height: 100%;
-    background-color: #e11d4777;
+    background-color: #e11d47b0;
     color:white;
     transition: all 0.5s ease
 }
@@ -121,7 +127,7 @@
     top: 10px;
     left:10px;
     height: 100%;
-    background-color:#312e81ae;
+    background-color:#312e81cb;
     color:white;
     transition: all 0.5s ease
 }
@@ -148,6 +154,7 @@
     .portfolio {
         margin-top: 0;
         display: block;
+        padding: 3rem;
         padding-inline: 1.5rem;
     }
     .portfolio_project {
@@ -155,6 +162,10 @@
     }
     .portfolio_carousel {
         display: block;
+    }
+    .overlay_title {
+        font-size: var(--fs-s);
+        font-weight: 600;
     }
 }
 
@@ -204,6 +215,12 @@
     .portfolio_carousel {
         display: none;
     }
+    .overlay_title {
+        font-size: var(--fs-l);
+    }
+    .overlay_text {
+        font-size: var(--fs-m);
+    }
 }
 
 /* xl */
@@ -212,6 +229,12 @@
     .portfolio_carousel {
         display: none;
     }
+    .overlay_title {
+        font-size: var(--fs-l);
+    }
+    .overlay_text {
+        font-size: var(--fs-m);
+    }
 }
 
 /* 2xl */
@@ -219,5 +242,11 @@
 @media (min-width:1280px) and (max-width: 1536px) {
     .portfolio_carousel {
         display: none;
+    }
+    .overlay_title {
+        font-size: var(--fs-l);
+    }
+    .overlay_text {
+        font-size: var(--fs-m);
     }
 }

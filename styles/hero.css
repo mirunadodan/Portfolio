@@ -3,7 +3,7 @@
     margin-bottom: 5rem;
     padding-left: 5rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
 }
 .hero_left {
@@ -110,10 +110,11 @@
         width: 100px;
     }
     .hero {
-        /* margin-top: 3rem; */
+        margin-top: 3rem;
+        margin-bottom: 1rem;
         padding-inline:1rem;
         align-items: flex-start;
-        margin-bottom: 0;
+        height: 40dvh;
     }
     .hero_left {
         align-items: center;
@@ -132,17 +133,17 @@
         margin-bottom:2.5rem;
     }
     .btn {
-        width: 100px;
+        width: 120px;
         height: 40px;
         padding: 0.25rem;
-        font-size: 1rem;
+        font-size: var(--fs-s)
     }
     .hero_link > img {
         width: 30px;
     }
     .svg_rect {
         height: 40px;
-        width: 100px;
+        width: 120px;
     }
 }
 
@@ -156,8 +157,11 @@
         width: 150px;
     }
     .hero {
+        margin-top: 3rem;
+        margin-bottom: 3rem;
         padding-inline:1rem;
         align-items: flex-start;
+        height: 40dvh;
     }
     .hero_left {
         align-items: center;
@@ -173,17 +177,17 @@
         margin-bottom:2.5rem;
     }
     .btn {
-        width: 100px;
+        width: 120px;
         height: 40px;
         padding: 0.25rem;
-        font-size: var(--fs-s)
+        font-size: var(--fs-m)
     }
     .hero_link > img {
         width: 30px;
     }
     .svg_rect {
         height: 40px;
-        width: 100px;
+        width: 120px;
     }
 }
 
@@ -197,6 +201,7 @@
         width: 150px;
     }
     .hero {
+        margin-bottom: 3rem;
         padding-inline:1rem;
         align-items: flex-start;
     }
