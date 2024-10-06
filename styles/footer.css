@@ -28,6 +28,10 @@
     color:#334155;
     background-color: var(--clr-light);
 }
+.contact_message {
+    height:150px;
+    padding-top:1rem;
+}
 .contact_submit {
     margin-top: 1rem;
     padding-top: 0.25rem;

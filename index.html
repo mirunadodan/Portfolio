@@ -231,7 +231,7 @@
             <form class="contact_form" id="contact_form">
               <input type="text" class="contact_input" name="name" placeholder="Your name" id="contact_name" required/>
               <input type="email" class="contact_input" name="email" placeholder="Your email" id="contact_email" oninput="validateEmailInput()" required/>
-              <input type="text" class="contact_input" name="message" placeholder="Message" id="contact_message" required/>
+              <textarea class="contact_input contact_message" name="message" placeholder="Message" id="contact_message" required></textarea>
               <p id="contactEmailFeedback" style="color:var(--clr-rose); margin-top: 0.5rem;"></p>
               <button class="btn contact_submit" id="contact_submit">
                 <svg xmlns="http://www.w3.org/2000/svg">
@@ -261,10 +261,10 @@
         <div class="about_content">
             <div class="about_left">
               <h1 class="about_heading">About me</h1>
-              <p class="about_text">I'm Riccardo Zanutta, a 22-year-old Italian Freelance Front-end developer. I'm a weird guy who likes making weird things with web technologies. I like to resolve design problems, create smart user interface and imagine useful interaction, developing rich web experiences & web applications.</p>
-              <p class="about_text">
-               I work with:
-                </p>
+              <p class="about_text">I'm a former Marketing Manager, with a passion for Web-Development that I started turning into a career.</p>
+              <p class="about_text">I work mainly with the MERN stack, but I am constantly learning. I like to resolve design problems, create smart user interface and develop rich web experiences.</p>
+              <p class="about_text">I also like coffee, <a class="about_link" href="https://codepen.io/Miruna-Dodan">buttons & animations</a>.</p>
+              <!-- <p class="about_text">I work with:</p> -->
                 <div class="about_carousel">
                   <div class="about_group">
                     <div class="about_cell cell1"><span class="cell_tooltip">React</span></div>
@@ -289,9 +289,9 @@
               <form class="about_form" id="about_form">
                 <input type="text" class="about_input" name="name" placeholder="Your name" id="form_name" required/>
                 <input type="email" class="about_input" name="email" placeholder="Your email" id="form_email" oninput="validateEmailInput()" required/>
-                <input type="text" class="about_input" name="message" placeholder="Message" id="form_message" required/>
+                <textarea class="about_input message" name="message" placeholder="Message" id="form_message"></textarea>
                 <p id="emailFeedback" style="color:var(--clr-rose); margin-top: 0.5rem;"></p>
-                <button class="btn about_submit" id="submit">Submit</button>
+                <button class="about_submit" id="submit">Submit</button>
               </form>
             </div>
         </div>
