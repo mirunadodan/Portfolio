@@ -101,7 +101,7 @@ input:focus, textarea:focus {
  }
  .message {
     height:60px;
-    padding-top:2rem;
+    padding-top:1.5rem;
  }
  .about_link {
     background: radial-gradient(circle,#4f46e5,#e11d48);
@@ -327,6 +327,9 @@ input:focus, textarea:focus {
     .about_submit{
         font-size: var(--fs-m);
     }
+    .message {
+        height:10rem;
+     }
 }
 
 /* 2xl */
@@ -346,7 +349,7 @@ input:focus, textarea:focus {
         font-size: var(--fs-s);
     }
     .message {
-        height:100px;
+        height:10rem;
      }
     .about_submit{
         font-size: var(--fs-m);
